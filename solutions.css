@@ -1,0 +1,177 @@
+.ex-1-square:hover{
+    background-color: red;
+}
+.ex-1-square{
+    transition: 3s;
+}
+
+.ex-2-square:active{
+    width: 400px;
+}
+.ex-2-square{
+    transition: 3s;
+}
+
+.ex-3-square:hover{
+    border-radius: 50%;
+}
+.ex-3-square{
+    transition: 3s;
+}
+
+.ex-4-square:hover{
+    opacity: 0;
+}
+.ex-4-square{
+    transition: 3s;
+}
+
+.ex-5-square:hover{
+    transform: scale(1.5);
+}
+.ex-5-square{
+    transition: 3s;
+}
+.ex-5-square:active{
+    transform: scale(0.5);
+}
+
+.ex-6-img:hover{
+    filter: grayscale(100%);
+}
+
+.ex-7-img:hover{
+    filter: grayscale(70%) sepia(60%);
+}
+.ex-7-img{
+    transition: 3s;
+}
+
+.ex-8-img:hover{
+    filter: sepia(60%) grayscale(70%);
+    border-radius: 15px;
+}
+.ex-8-img{
+    transition: 3s;
+}
+
+.ex-9-img:hover{
+    filter: sepia(60%) grayscale(70%);
+    border-radius: 15px;
+    transform: scale(2);
+}
+.ex-9-img{
+    transition: 3s;
+}
+
+.ex-10-icon{
+    animation: spin 3s infinite linear;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.ex-11-icon:hover{
+    animation: spin 3s linear;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    80%{
+        transform: rotate(0deg);
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white{  
+    animation: movetop 3s linear;
+}
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: movebottom 3s linear;
+}  
+@keyframes movetop{
+    0%{
+        left: 50px;
+    }
+    50%{
+        left: 120px;
+    }
+    100%{
+        left: 50px;
+    }
+}
+@keyframes movebottom{
+    0%{
+        right: 50px;
+    }
+    50%{
+        right: 120px;
+    }
+    100%{
+        right: 50px;
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white{  
+    animation: movetop 3s linear;
+}
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: movebottom 3s linear;
+}  
+@keyframes movetop{
+    0%{
+        left: 50px;
+        top: -10%;
+    }
+    25%{
+        left: 80%;
+        top: -10%;
+    }
+    50%{
+        left: 80%;
+        top: 100%;
+    }
+    75%{
+        left: 0%;
+        top: 100%;
+    }
+
+    100%{
+        left: 50px;
+        top: -10%;
+    }
+}
+@keyframes movebottom{
+    0%{
+        right: 50px;
+        bottom: -10%;
+    }
+    25%{
+        right: 80%;
+        bottom: -10%;
+    }
+
+    50%{
+        right: 80%;
+        bottom: 100%;
+    }
+    75%{
+        bottom: 100%;
+        right: 0%;
+    }
+    100%{
+        right: 50px;
+        bottom: -10%;
+    }
+}
+
+
+
